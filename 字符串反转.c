@@ -3,26 +3,22 @@
 
  int main(void) 
  {
- 	char ch[100];//×Ö·ûÊı×é 
-	char t;//ÁÙÊ±×Ö·û 
-	int len;//±£´æ×Ö·û³¤¶È 
+ 	char ch[100];//å­—ç¬¦æ•°ç»„ 
+	char t;//ä¸´æ—¶å­—ç¬¦ 
+	int len;//ä¿å­˜å­—ç¬¦é•¿åº¦ 
+	int i =0;
 	printf("Enter a string:");
-	fgets (ch, 99, stdin);//»ñÈ¡£¬·Åµ½ch£¬±ê×¼ÊäÈë 
+	fgets(ch, 99, stdin);//è·å–ï¼Œæ”¾åˆ°chï¼Œæ ‡å‡†è¾“å…¥ 
     printf(ch);
-	len = strlen(ch);//³¤¶È»ñÈ¡ 
-	for (int i = 0; i<len/2; i++) //forÑ­»··´×ª 
+	len = strlen(ch);//é•¿åº¦è·å– 
+	for (i<len/2;i++;)
 	{
-		t=ch[i];
+	t=ch[i];
 		ch[i]=ch[len-1-i];
-		ch[len-1-i]=t;
-		
-		
-		
+		ch[len-1-i]=t;	
 	}
 	printf("After:");
 	printf(ch);
  	return 0;
- 	
- 	
- 	
+
  }
